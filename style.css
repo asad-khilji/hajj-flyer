@@ -1,0 +1,124 @@
+/* style.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+.header {
+    text-align: center;
+    color: #8B4513;
+    background-color: #f8e8c0;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.header h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 1.2em;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+.highlights {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.highlight-box {
+    background-color: #a52a2a;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 5px;
+    flex: 1 1 45%;
+}
+
+.pricing {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.price-box {
+    background-color: #ffd700;
+    color: #333;
+    padding: 10px 15px;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 10px 10px;
+    flex: 1 1 30%;
+}
+
+.images {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.image-kaaba, .image-masjid {
+    width: 45%;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8e8c0;
+    color: #333;
+    border-top: 1px solid #ddd;
+}
+
+.footer p {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+    .header h1 {
+        font-size: 1.5em;
+    }
+    
+    .header p {
+        font-size: 1em;
+    }
+    
+    .highlight-box, .price-box {
+        flex: 1 1 100%;
+        margin: 5px 0;
+    }
+
+    .images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-kaaba, .image-masjid {
+        width: 80%;
+    }
+}
