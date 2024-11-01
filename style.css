@@ -60,6 +60,10 @@
     flex-wrap: wrap;
 }
 
+.pricing a {
+    text-decoration: none;
+}
+
 .price-box {
     background-color: #ffd700;
     color: #333;
